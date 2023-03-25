@@ -39,7 +39,7 @@ jobs:
 
     environment:
       name: github-pages
-      url: zhangqi444.github.io/test-jupyter-lite
+      url: ${{ steps.deployment.outputs.page_url }}
 
     runs-on: ubuntu-latest
     steps:
